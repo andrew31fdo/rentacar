@@ -1,0 +1,103 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <package name="showcase" extends="struts-default,json-default" namespace="/">
+      
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+        </result-types>
+        <action name="*Link" method="{1}" class="str.ControlAction">
+            <result name="wel" type="tiles">wel</result>
+            <result name="login">login.jsp</result>
+        </action>
+        <action name="*Customer" method="{1}" class="str.CustomerAction">
+            <result name="add" type="tiles">addCustomer</result>
+            <result name="input" type="tiles">addCustomer</result>
+            <result name="viewAll" type="tiles">viewAllCustomer</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*CustomerType" method="{1}" class="str.CustTypeAction">
+            <result name="add" type="tiles">addCustomerType</result>
+            <result name="input" type="tiles">addCustomerType</result>
+            <result name="viewAll" type="tiles">viewAllCustomerType</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*Location" method="{1}" class="str.LocationAction">
+            <result name="add" type="tiles">addLocation</result>
+            <result name="input" type="tiles">addLocation</result>
+            <result name="viewAll" type="tiles">viewAllLocation</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*Make" method="{1}" class="str.MakeAction">
+            <result name="add" type="tiles">addMake</result>
+            <result name="input" type="tiles">addMake</result>
+            <result name="viewAll" type="tiles">viewAllMake</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*VehicleModel" method="{1}" class="str.VehicleModelAction">
+            <result name="add" type="tiles">addVehicleModel</result>
+            <result name="input" type="tiles">addVehicleModel</result>
+            <result name="viewAll" type="tiles">viewAllVehicleModel</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*VehicleClass" method="{1}" class="str.VehicleClassAction">
+            <result name="add" type="tiles">addVehicleClass</result>
+            <result name="input" type="tiles">addVehicleClass</result>
+            <result name="viewAll" type="tiles">viewAllVehicleClass</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*User" method="{1}" class="str.UserAction">
+            <result name="add" type="tiles">addUser</result>
+            <result name="input" type="tiles">addUser</result>
+            <result name="viewAll" type="tiles">viewAllUser</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*Options" method="{1}" class="str.OptionsAction">
+            <result name="add" type="tiles">addOptions</result>
+            <result name="input" type="tiles">addOptions</result>
+            <result name="viewAll" type="tiles">viewAllOptions</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*Feature" method="{1}" class="str.FeatureAction">
+            <result name="add" type="tiles">addFeature</result>
+            <result name="input" type="tiles">addFeature</result>
+            <result name="viewAll" type="tiles">viewAllFeature</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*RateType" method="{1}" class="str.RateTypeAction">
+            <result name="add" type="tiles">addRateType</result>
+            <result name="input" type="tiles">addRateType</result>
+            <result name="viewAll" type="tiles">viewAllRateType</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*Rate" method="{1}" class="str.RateAction">
+            <result name="add" type="tiles">addRate</result>
+            <result name="input" type="tiles">addRate</result>
+            <result name="viewAll" type="tiles">viewAllRate</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*Vehicle" method="{1}" class="str.VehicleAction">
+            <result name="add" type="tiles">addVehicle</result>
+            <result name="input" type="tiles">addVehicle</result>
+            <result name="upload" type="tiles">upload</result>
+            <result name="uploaded" type="tiles">uploaded</result>
+            <result name="viewAll" type="tiles">viewAllVehicle</result>
+            <result name="confirm" type="tiles">confirm</result>
+        </action>
+        <action name="*Reservation" method="{1}" class="str.ReservationAction">
+            <result name="add">reservationSelection.jsp</result>
+            <result name="vehicle">reservationSelectVehicle.jsp</result>
+            <result name="option">reservationSelectOption.jsp</result>
+            <result name="customer">reservationCustomer.jsp</result>
+            <result name="confirm">reservationConfirm.jsp</result>
+            <result name="final">reservationFinish.jsp</result>
+            <result name="dash" type="tiles">dash</result>
+            <result name="viewAll" type="tiles">viewAllReservation</result>
+            
+        </action>
+    </package>
+</struts>

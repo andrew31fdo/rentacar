@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="baseLayout" template="/baseLayout.jsp">
+     
+        <put-attribute name="menu"   value="/menu.jsp"/>
+        <put-attribute name="body"   value="/body.jsp"/>
+        <put-attribute name="header"   value="/header.jsp"/>
+        <put-attribute name="footer"   value="/footer.jsp"/>
+     
+    </definition>
+  
+    <definition name="wel" extends="baseLayout">
+        <put-attribute name="body"   value="/welcome.jsp"/>      
+    </definition>
+  
+    <definition name="addCustomer" extends="baseLayout">    
+        <put-attribute name="body"   value="/customerForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllCustomer" extends="baseLayout">
+        <put-attribute name="body"   value="/customer.jsp"/>
+    </definition>
+  
+    <definition name="confirm" extends="baseLayout">
+        <put-attribute name="body"   value="/confirmation.jsp"/>
+    </definition>
+  
+    <definition name="addCustomerType" extends="baseLayout">    
+        <put-attribute name="body"   value="/customerTypeForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllCustomerType" extends="baseLayout">
+        <put-attribute name="body"   value="/customerType.jsp"/>
+    </definition>
+  
+    <definition name="addLocation" extends="baseLayout">    
+        <put-attribute name="body"   value="/locationForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllLocation" extends="baseLayout">
+        <put-attribute name="body"   value="/location.jsp"/>
+    </definition>
+  
+    <definition name="addMake" extends="baseLayout">    
+        <put-attribute name="body"   value="/makeForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllMake" extends="baseLayout">
+        <put-attribute name="body"   value="/make.jsp"/>
+    </definition>
+  
+    <definition name="addUser" extends="baseLayout">    
+        <put-attribute name="body"   value="/userForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllUser" extends="baseLayout">
+        <put-attribute name="body"   value="/user.jsp"/>
+    </definition>
+  
+    <definition name="addOptions" extends="baseLayout">    
+        <put-attribute name="body"   value="/optionsForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllOptions" extends="baseLayout">
+        <put-attribute name="body"   value="/options.jsp"/>
+    </definition>
+  
+    <definition name="addFeature" extends="baseLayout">    
+        <put-attribute name="body"   value="/featureForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllFeature" extends="baseLayout">
+        <put-attribute name="body"   value="/feature.jsp"/>
+    </definition>
+  
+    <definition name="addRateType" extends="baseLayout">    
+        <put-attribute name="body"   value="/rateTypeForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllRateType" extends="baseLayout">
+        <put-attribute name="body"   value="/rateType.jsp"/>
+    </definition>
+  
+    <definition name="addVehicleModel" extends="baseLayout">    
+        <put-attribute name="body"   value="/vehicleModelForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllVehicleModel" extends="baseLayout">
+        <put-attribute name="body"   value="/vehicleModel.jsp"/>
+    </definition>
+  
+    <definition name="addRate" extends="baseLayout">    
+        <put-attribute name="body"   value="/rateForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllRate" extends="baseLayout">
+        <put-attribute name="body"   value="/rate.jsp"/>
+    </definition>
+  
+    <definition name="addVehicleClass" extends="baseLayout">    
+        <put-attribute name="body"   value="/vehicleClassForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllVehicleClass" extends="baseLayout">
+        <put-attribute name="body"   value="/vehicleClass.jsp"/>
+    </definition>
+    <definition name="addVehicle" extends="baseLayout">    
+        <put-attribute name="body"   value="/vehicleForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllVehicle" extends="baseLayout">
+        <put-attribute name="body"   value="/vehicle.jsp"/>
+    </definition>
+    <definition name="addReservation" extends="baseLayout">    
+        <put-attribute name="body"   value="/reservationForm.jsp"/>
+    </definition>
+  
+    <definition name="viewAllReservation" extends="baseLayout">
+        <put-attribute name="body"   value="/reservation.jsp"/>
+    </definition>
+    <definition name="dash" extends="baseLayout">
+        <put-attribute name="body"   value="/dashboard.jsp"/>
+    </definition>
+    <definition name="upload" extends="baseLayout">
+        <put-attribute name="body"   value="/uploadPicture.jsp"/>
+    </definition>
+    <definition name="uploaded" extends="baseLayout">
+        <put-attribute name="body"   value="/uploadSuccess.jsp"/>
+    </definition>
+</tiles-definitions>

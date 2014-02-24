@@ -1,0 +1,149 @@
+* {
+	margin:0px;
+	
+}
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+body {
+	color:#444444;
+	font-size:13px;
+	background: #f2f2f2;
+	font-family:"Century Gothic", Helvetica, sans-serif;
+        display: table-cell;
+        vertical-align: middle;
+}
+h1 {
+	color:#ccc;
+	font-size:26px;
+	text-shadow:1px 1px 1px #fff;
+	padding:20px;
+}
+#content {
+	margin:15px auto;
+	position:relative;
+	height:100%;
+}
+.wrapper {
+	-moz-box-shadow:0px 0px 3px #aaa;
+	-webkit-box-shadow:0px 0px 3px #aaa;
+	box-shadow:0px 0px 3px #aaa;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:2px solid #fff;
+	background-color:#f9f9f9;
+	overflow:hidden;
+        display: inline-block;
+}
+ input:not([type=radio]),  textarea,  select {
+ background: #ffffff;
+ border: 1px solid #ddd;
+ -moz-border-radius: 3px;
+ -webkit-border-radius: 3px;
+ border-radius: 3px;
+ outline: none;
+ padding: 3px;
+ width: 200px;
+}
+input:focus {
+	-moz-box-shadow:0px 0px 3px #aaa;
+	-webkit-box-shadow:0px 0px 3px #aaa;
+	box-shadow:0px 0px 3px #aaa;
+	background-color:#FFFEEF;
+}
+p.submit {
+	background:none;
+	border:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+mbutton {
+	border:none;
+	outline:none;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	color: #ffffff;
+	display: block;
+	cursor:pointer;
+	margin: 0px auto;
+	clear:both;
+	padding: 4px 15px;
+	text-shadow: 0 1px 1px #777;
+	font-weight:bold;
+	font-family:"Century Gothic", Helvetica, sans-serif;
+	font-size:18px;
+	-moz-box-shadow:0px 0px 3px #aaa;
+	-webkit-box-shadow:0px 0px 3px #aaa;
+	box-shadow:0px 0px 3px #aaa;
+	background:#4797ED;
+}
+mbutton:hover {
+	background:#d8d8d8;
+	color:#666;
+	text-shadow:1px 1px 1px #fff;
+}
+a {
+	color:#36F;
+	text-decoration:none;
+}
+a:hover {
+	color:#09F;
+	text-decoration:underline;
+}
+input.error {
+	border-color: #D00;
+	color: #D00;
+	background: #FFFFFE;
+}
+label.error {
+	display: inline-block;
+	font-size: 12px;
+	color: #D00;
+	padding-left: 10px;
+	font-style: italic;
+}
+
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+        margin-left:10%; 
+    margin-right:10%;
+    width: 80%
+}
+table.gridtabler {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+        margin-left:3%; 
+    margin-right:3%;
+    width: 80%
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: black;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: black;
+	background-color: #ffffff;
+}
